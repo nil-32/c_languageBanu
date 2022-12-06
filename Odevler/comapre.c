@@ -1,35 +1,26 @@
-
-#include "stdio.h"
-#include "string.h"
-
-#define name "Akif"
-#define surname "cifci"
+// compare name and surname and code it on screen. 
+#include"stdlib.h"
+#include"stdio.h"
+#include"string.h"
 
 
-int main() {
-    char myname[10];
-    char mysurname[10];
-    int favnumber;
-    printf("Enter your name:");
-    scanf("%s", myname);
-    printf("Enter your surname:");
-    scanf("%s", mysurname);
-    printf("Enter your favourite number:");
-    scanf("%d", &favnumber);
-    if (strcmp(myname, name) == 0) {
-        if (strcmp(mysurname, surname) == 0) {
-            if (favnumber == 7) {
-                printf("You are Akif cifci");
-            } else {
-                printf("You are not Akif cifci");
-            }
-        } else {
-            printf("You are not Akif cifci");
-        }
+int main(){
+  char name[] ="akif"; 
+  char surname[] ="ciftci";
+  char x[20];
+  char y[20];
+printf("name: ");
+scanf("%s",x);
+    printf("surname: ");
+    scanf("%s",y);
+ 
+  printf("%s %s\n", x, y);
+
+    if (strcmp(name, x) == 0 && strcmp(surname, y) == 0) {
+        printf("You are Akif, I know who you are man, my favorite teacher");
     } else {
-        printf("You are not Akif cifci");
-    }
-    return 0;
-    
-}
+        printf("You are not Akif, I don't know who you are as I am not that clever");
 
+        return 0;
+  }
+}
